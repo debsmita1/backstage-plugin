@@ -8,3 +8,10 @@ To start the app, run:
 yarn install
 yarn dev
 ```
+
+To start the "my-plugin", run:
+
+```sh
+yarn install
+yarn workspace @internal/plugin-my-plugin start
+```

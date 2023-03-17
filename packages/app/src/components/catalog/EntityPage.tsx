@@ -55,6 +55,7 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import { MyPluginPage } from '@internal/plugin-my-plugin';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -165,6 +166,10 @@ const serviceEntityPage = (
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
     </EntityLayout.Route>
+
+    <EntityLayout.Route path="/my-plugin-route" title="My Plugin">
+      <MyPluginPage />
+    </EntityLayout.Route>
   </EntityLayout>
 );
 
@@ -191,6 +196,10 @@ const websiteEntityPage = (
 
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/my-plugin-route" title="My Plugin">
+      <MyPluginPage />
     </EntityLayout.Route>
   </EntityLayout>
 );
